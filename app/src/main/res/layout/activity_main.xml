@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wel_bg1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="90dp"
+        android:background="#9A964B00"
+        android:fontFamily="sans-serif-black"
+        android:text="WELCOME"
+        android:textColor="@color/colorWelcomeBackground"
+        android:textSize="65sp"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="At"
+        android:textColor="@color/colorWelcomeBackground"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#9A964B00"
+        android:fontFamily="sans-serif-black"
+        android:text="CAFE DERA"
+        android:textColor="@color/colorWelcomeBackground"
+        android:textSize="55sp"
+        android:textStyle="italic" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="122dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginBottom="204dp"
+            android:src="@drawable/custom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/colorWelcomeBackground"/>
+
+        <Button
+            android:id="@+id/btnCustomer"
+            android:layout_width="127dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginStart="56dp"
+            android:layout_marginBottom="100dp"
+            android:text="Customer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="122dp"
+            android:layout_height="115dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="204dp"
+            android:src="@drawable/staff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnStaff"
+            android:layout_width="127dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="100dp"
+            android:text="Staff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>

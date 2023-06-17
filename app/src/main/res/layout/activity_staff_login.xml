@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stf_log_bg"
+    tools:context=".Staff_Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Staff Login"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="#000000"
+            android:background="@drawable/login_boxes"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="#000000"
+            android:background="@drawable/login_boxes"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/radio_group">
+
+            <RadioButton
+                android:id="@+id/rbChef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chef" />
+
+            <RadioButton
+                android:id="@+id/rbCashier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cashier" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not registered? Sign up here."
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:textColor="#888888"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
